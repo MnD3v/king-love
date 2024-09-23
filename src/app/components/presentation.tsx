@@ -34,15 +34,16 @@ const Presentation = () => {
                                 initial="hidden"
                                 whileInView="show"
                                 className="w-[400px]">
-                                Transformez vos ambitions en compétences digitales grâce à nos formations, pour réussir dans un monde en pleine transformation.
+                                Transformez vos ambitions en expertise sectorielle grâce à notre accompagnement. Que ce soit dans le commerce, l'immobilier, l'agriculture ou la construction, nous vous aidons à réussir dans des secteurs en pleine expansion.
                             </motion.p>
                             <motion.a href='#formations'
                                 variants={Animations.scale({ duration: 2.5 })}
                                 initial="hidden"
                                 whileInView="show"
                                 className=" text-black hover:text-white uppercase font-semibold 
+                                w-auto
                                 px-10 py-4 my-3
-                                 
+                                 self-center
                                  bg-white hover:bg-transparent border-2 border-transparent hover:border-white
                                  ">nos services</motion.a>
                         </div>

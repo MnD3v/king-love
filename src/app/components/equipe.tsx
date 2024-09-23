@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Equipe = () => {
-    const membres = [{ image: "/vice.jpg", poste: "PDG", nom: "King Love" }, { image: "/vice.jpg", poste: "Vice Président", nom: "Steve " },]
+    const membres = [{ image: "/pdg.png", poste: "PDG", nom: "King Love" }, { image: "/vice.png", poste: "Vice Président", nom: "Steve " },]
     return (
         <div className='flex justify-center'>
             <div className='max my-10'>
-                <h1 className='font-bricolage my-6 text-center text-2xl md:text-4xl'>Nos Membres</h1>
+                <h1 className='font-bricolage my-6 text-center text-2xl md:text-4xl'>Notre Equipe</h1>
                 <div className='flex flex-wrap justify-center gap-3'>
                     {
                         membres.map((element) => (

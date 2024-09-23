@@ -51,8 +51,8 @@ export default function RootLayout({
           <div className="relative z-10 max flex flex-wrap justify-center gap-9">
 
             <div>
-              <img src="/white-logo.png" alt="" className="w-48" />
-              <p className="w-80 mt-6">Chez KLM-Group, des solutions web et mobiles sur mesure pour donner vie à vos projets avec efficacité et innovation.</p>
+              <img src="/white-logo.png" alt="" className="w-32 md:w-48" />
+              <p className="w-80 mt-6">Chez KLM-Group, nous offrons des solutions sur mesure dans le commerce, l'immobilier, l'agriculture, et bien plus, pour donner vie à vos projets avec efficacité et innovation.</p>
               <div className="my-6 flex gap-2">
                 {socials.map((element) => (
                   <div key={element.icon} className="bg-white h-14 w-14 rounded-lg flex flex-col items-center justify-center">
