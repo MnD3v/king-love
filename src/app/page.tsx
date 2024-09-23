@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div>
       {
-        isInView && <div className='fixed flex flex-col items-center justify-center bg-blue-950 h-full w-full'>
+        isInView && <div className='fixed flex flex-col items-center justify-center bg-teal-500 h-full w-full'>
           <div className='loader'></div>
         </div>}
       <motion.div
