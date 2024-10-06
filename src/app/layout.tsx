@@ -71,11 +71,11 @@ export default function RootLayout({
               </div>
               <div className="flex items-center">
                 <img src="/icons/mail.png" alt="" className="h-6 " />
-                <p className="p-3">KLM-Group@gmail.com</p>
+                <p className="p-3">klm-empire@gmail.com</p>
               </div>
               <div className="flex items-center">
                 <img src="/icons/map.png" alt="" className="h-6 mx-1 " />
-                <p className="p-3">Dongoyo, Kara-Togo</p>
+                <p className="p-3">Tomdè, Kara-Togo</p>
               </div>
             </div>
             <div className="pt-6 w-80">

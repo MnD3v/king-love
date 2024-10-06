@@ -1,8 +1,12 @@
+"use client"
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import Animations from './utils/item'
 
 const Contact = () => {
+
+    const [name, setName] = useState("")
+    const [message, setMessage] = useState("")
 
     const contacts = [{
         icon: "chat.png", title: "Ecrivez nous un message", description: `+228 90 90 90 90
@@ -21,12 +25,23 @@ const Contact = () => {
                         <p className='font-play italic'>Devenez un acteur clé dans des secteurs stratégiques. Que ce soit dans le commerce, l'immobilier, l'import-export, ou l'agriculture, nos solutions vous apportent l'expertise et l'accompagnement nécessaires pour réussir et innover dans des domaines en pleine croissance.</p>
                     </div>
                     <div className='w-full md:max-w-[43%]'>
-                        <div className='w-full flex flex-col md:grid md:grid-cols-2 gap-3'>
-                            <input type="text" name="" placeholder='Nom complet' id="" className='px-1 w-full py-3 border-b-[1px] border-zinc-500 bg-transparent ' />
-                            <input type="number" name="" placeholder='Téléphone' id="" className='px-1 w-full py-3 border-b-[1px] border-zinc-500 bg-transparent' />
-                            <textarea name="" placeholder='Votre message' id="" className='md:col-span-2 px-1 w-full py-3 border-b-[1px] border-zinc-500 bg-transparent' />
+                        <div className='w-full flex flex-col md:grid  gap-3'>
+                            <input type="text" name="" placeholder='Nom complet' id=""
+                                onChange={(event) => {
+                                    setName(event?.target.value)
+                                    console.log("changed")
+                                }}
+                                className='px-1 w-full py-3 border-b-[1px] border-zinc-500 focus:border-red-500 bg-transparent outline-none' />
+
+                            <textarea name="" placeholder='Votre message' id=""
+                                onChange={(event) => {
+                                    setMessage(event?.target.value)
+                                    console.log("changed")
+                                }}
+                                className='px-1 w-full py-3 border-b border-zinc-500 focus:border-red-500 bg-transparent outline-none' />
+
                         </div>
-                        <button className='bg-red-600 text-white font-semibold px-8 py-4 my-4'>Envoyer</button>
+                        <a href={'https://wa.me/22896368843' + `?text=Bonjour, je me nomme ${name}, ${message}`} target='_blank' className='inline-block bg-red-600 text-white font-semibold px-8 py-4 my-4'>Envoyer</a>
                     </div>
                 </div>
 

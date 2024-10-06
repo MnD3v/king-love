@@ -10,6 +10,7 @@ import FixedAppBar from "./components/fixed_app_bar";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Animations from "./components/utils/item";
+import AVenir from "./components/a-venir";
 
 export default function Home() {
   const [isInView, setIsInView] = useState(true);
@@ -36,6 +37,7 @@ export default function Home() {
 
         <FixedAppBar></FixedAppBar>
         <Presentation></Presentation>
+        <AVenir></AVenir>
         <Services></Services>
         <APropos></APropos>
         <Satisfaction></Satisfaction>

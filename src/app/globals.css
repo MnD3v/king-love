@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  outline: none;
   font-family: "Syne", Arial, Helvetica, sans-serif;
 }
 
