@@ -24,7 +24,7 @@ const AVenir = () => {
     return (
         <div className='flex justify-center my-6'>
             <div className='max w-full'>
-                <p className='m-2 text-red-500 text-lg font-semibold'>//Evenements</p>
+                <p className='m-2 text-red-500 text-lg font-semibold'>{"//Evenements"}</p>
                 <h1 className='m-2 text-2xl md:text-4xl'>Evenements à venir</h1>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 m-2'>
                     {
