@@ -65,7 +65,7 @@ const Services = () => {
                 <div className='flex flex-col w-full p-2 gap-3'>
                     <p className=' uppercase text-red-500 font-semibold'>{"// CE QUE NOUS OFFRONS"}</p>
 
-                    <h1>Solution Business</h1>
+                    <h1 className='text-2xl md:text-4xl'>Solution Business</h1>
                     <p>Nous apportons des solutions dans divers domaines d'activités.</p>
                     <div className='flex justify-between items-center
                     w-44

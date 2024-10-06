@@ -24,12 +24,13 @@ const AVenir = () => {
     return (
         <div className='flex justify-center my-6'>
             <div className='max w-full'>
-                <h1>Evenements à venir</h1>
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3'>
+                <p className='m-2 text-red-500 text-lg font-semibold'>//Evenements</p>
+                <h1 className='m-2 text-2xl md:text-4xl'>Evenements à venir</h1>
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3 m-2'>
                     {
                         evenements.map((element) => (
-                            <div key={element.title} className='w-full p-1 m-1 border'>
-                                <img src={"/evenements/" + element.image} alt="" />
+                            <div key={element.title} className='w-full p-1 border rounded-md'>
+                                <img src={"/evenements/" + element.image} alt="" className='rounded-sm' />
                                 <div>
                                     <p className='font-bricolage text-2xl text-red-600 font-bold'>{element.title}</p>
                                     <p>{element.descrption}</p>

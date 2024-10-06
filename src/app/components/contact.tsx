@@ -9,12 +9,12 @@ const Contact = () => {
     const [message, setMessage] = useState("")
 
     const contacts = [{
-        icon: "chat.png", title: "Ecrivez nous un message", description: `+228 90 90 90 90
-       `, buttonText: "Envoyer un message", link: ""
-    }, { icon: "red-mail.png", title: "Envoyez nous un mail", description: "kingloveempire@gmail.com", buttonText: "Envoyer un mail", link: "" }, { icon: "phone-call.png", title: "Appelez nous", description: "+228 98 98 98 98", buttonText: "+228 90559055", link: "" },
-    { icon: "red-map.png", title: "Adresse ", description: "Kara-Tomdè", buttonText: "+228 90559055", link: "" },]
+        icon: "chat.png", title: "Ecrivez nous un message", description: `+228 96 36 88 43
+       `, link: "https://wa.me/22896368843"
+    }, { icon: "red-mail.png", title: "Envoyez nous un mail", description: "kingloveempire@gmail.com", buttonText: "Envoyer un mail", link: "mailto:kinglovemedina@gmail.com" }, { icon: "phone-call.png", title: "Appelez nous", description: "+228 96 36 88 43", link: "tel:+22896368843" },
+    ]
     return (
-        <section id="contact" className='flex flex-col items-center justify-center'>
+        <section id="contact" className='font-poppins flex flex-col items-center justify-center'>
 
             <div className='flex justify-center'>
                 <div className='max md:flex md:justify-between w-full  bg-red-100 p-6 md:p-16 my-12'>
@@ -65,10 +65,26 @@ const Contact = () => {
 
                         <h3>{element.title}</h3>
                         <p style={{ whiteSpace: 'pre-wrap' }} className=''>{element.description} </p>
-
+                        <a href={element.link} target='_blank' className='inline-block px-6 py-3 bg-red-600 rounded-md text-white self-start'> Contacter </a>
 
                     </motion.div>
                 ))}
+                <motion.div
+
+                    variants={Animations.bottomToTop({ duration: 0.4 })}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    className='w-full  rounded-xl flex flex-col p-4 gap-3'>
+
+                    <img src={`/icons/red-map.png`} alt="" className='h-10 md:h-14 self-start' />
+
+                    <h3>Adresse</h3>
+                    <p style={{ whiteSpace: 'pre-wrap' }} className=''>Kara-Tomdè </p>
+
+
+                </motion.div>
+
             </div>
         </section>
 

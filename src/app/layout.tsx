@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "KLM-Group",
-  description: "Entreprise de formation des jeunes",
+  description: "Import export au Togo, e-commerce au Togo, formation des jeunes",
 };
 
 export default function RootLayout({
