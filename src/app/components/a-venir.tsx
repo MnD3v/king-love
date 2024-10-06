@@ -28,7 +28,7 @@ const AVenir = () => {
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-3'>
                     {
                         evenements.map((element) => (
-                            <div className='w-full p-1 m-1 border'>
+                            <div key={element.title} className='w-full p-1 m-1 border'>
                                 <img src={"/evenements/" + element.image} alt="" />
                                 <div>
                                     <p className='font-bricolage text-2xl text-red-600 font-bold'>{element.title}</p>
